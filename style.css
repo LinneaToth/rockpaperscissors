@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, arial, sans-serif;
+    text-align: center;
+    background: radial-gradient(#390099, #0f0224);
+    display: flex;
+    color: white;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 3rem;
+}
+
+button {
+    border-style: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 5rem;
+    background-color: #9e0059;
+    color: white;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.choice:hover {
+    background-image: linear-gradient(#9e0059, #ff0054);
+}
+
+
+
+#result {
+    margin-top: 2rem;
+    height: 2rem;
+
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 5rem;
+    width: 500px;
+    height: 400px;
+    color: black;
+
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+.animationContainer {
+    position: absolute;
+    top: 50px;
+    left: 40%;
+    width: 20%;
+    height: 200px;
+}
+
+#confetti1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    width: 10px;
+    height: 15px;
+    background-color: #ffbd00;
+    animation-name: win1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#confetti2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(40% 0%, 100% 0%, 75% 100%, 0% 100%);
+    width: 10px;
+    height: 15px;
+    background-color: #ff0054;
+    animation-name: win2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#confetti3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(40% 0%, 100% 0%, 75% 100%, 0% 100%);
+    width: 10px;
+    height: 15px;
+    background-color: #ff5400;
+    animation-name: win3;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.animationContainer {
+    display: none;
+}
+
+.reset {
+    display: none;
+    background-color: #ff5400;
+    color: white;
+    position: relative;
+    left: -120px;
+    top: -120px;
+    transition: all 0.2s;
+}
+
+.reset:active {
+    background-color: #ffbd00;
+
+}
+
+.visible {
+    display: block;
+}
+
+
+.winner {
+    font-weight: bolder;
+}
+
+
+@keyframes win1 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    40% {
+        left: 20%;
+        top: 40%;
+        rotate: -30deg;
+    }
+
+    100% {
+        left: 10%;
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes win2 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    40% {
+        left: 50%;
+        top: 40%;
+        rotate: 90deg;
+    }
+
+    100% {
+        left: 100%;
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes win3 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    50% {
+        left: 20%;
+        top: 30%;
+        rotate: 30deg;
+    }
+
+    100% {
+        left: 30%;
+        top: 100%;
+        opacity: 0;
+    }
+}
