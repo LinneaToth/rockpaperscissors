@@ -13,7 +13,7 @@ This exercise project is built using **HTML5**, **JavaScript**, and **CSS**.
 
 ## Technologies Used
 - **HTML5** for the structure of the game.
-- **Vanilla JavaScript** for game logic.
-- **Vanilla CSS** for styling and animation.
+- **JavaScript** for game logic.
+- **CSS** for styling and animation.
 
 Project Link: [https://linneatoth.github.io/rockpaperscissors](https://linneatoth.github.io/rockpaperscissors)
