@@ -2,7 +2,7 @@
 
 ![preview of rock paper scissors game](img/preview.png "Preview")
 
-This exercise project is built using **HTML5**, **Vanilla JavaScript**, and **Vanilla CSS**.
+This exercise project is built using **HTML5**, **JavaScript**, and **CSS**.
 
 ## Features
 - **User Choice**: Select Rock, Paper, or Scissors.
